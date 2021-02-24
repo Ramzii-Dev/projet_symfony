@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}compte!{% endblock %}
+
+{% block content %}
+    <h1>bonjour {{ app.user.firstname }}</h1>
+    <button  class="btn btn-outline-primary"><a  style="text-decoration:none ; color:black" href="{{ path('account_password') }}">modifier mon mot de passe</a></button>
+{% endblock %}
