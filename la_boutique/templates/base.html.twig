@@ -7,7 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/favicon.ico') }}" />
-    <title>{% block titre %}La Boutique{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -15,22 +15,15 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <style>
 
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
+
 
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
         }
-        i{
-            color: white;
+        .i{
+           color: white;
         }
         a{
             text-decoration: none;
@@ -43,7 +36,7 @@
 <header>
 
     <nav class="navbar navbar-expand-md  navbar-dark fixed-top " style="background-color: #3c3f41;">
-        <a class="navbar-brand" href="#"><img style="max-width:40px;background-color: white;border-radius: 100%" src="logo.png " alt="">
+        <a class="navbar-brand" href="{{ path('home') }}"><img src="/logo.png" style="max-width:40px;background-color: #ffffff;border-radius: 100%" alt="">
             Muscular</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,10 +44,10 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#">Produits <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{ path('products') }}">Produits <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
@@ -64,8 +57,8 @@
                 </li>
             </ul>
             {% if app.user %}('
-                <a href="{{ path ('account') }}"><i class="fas fa-user ml-3"></i></a>
-            <a href="{{ path ('app_logout')}}"><i class="far fa-sign-out-alt ml-3"></i></a>
+                <a href="{{ path ('account') }}"><i class="fas fa-user ml-3 i"></i></a>
+            <a href="{{ path ('app_logout')}}"><i class="far fa-sign-out-alt ml-3 i"></i></a>
             {% else %}
                 <a href="{{ path ('app_login')}}" class="ml-2">connexion  </a>
                 <br>
@@ -140,9 +133,9 @@
     </div><!-- /.container -->
 
     <!-- FOOTER -->
-    <footer class="container">
+    <footer id="footer" class="container ">
         <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2021 YOUSFI-Ramzi &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </footer>
 </main>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
