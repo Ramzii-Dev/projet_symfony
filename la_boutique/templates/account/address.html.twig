@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes Addresses{% endblock %}
+
+{% block content %}
+    <a href="{{ path('account_address_add') }}" class="btn btn-outline-info btn-sm float-right">ajouter une addresse</a>
+    <h1>addresses</h1>
+    {% if app.user.addresses|length ==0 %}
+        <p class="text-center mt-5 mb-5">Vous m'avez pas encore mit d'addresses </p>
+        {% else %}
+    {% endif %}
+    <a href="{{ path('account') }}">retour</a>
+{% endblock %}
