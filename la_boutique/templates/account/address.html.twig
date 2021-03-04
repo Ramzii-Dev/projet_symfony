@@ -8,6 +8,19 @@
     {% if app.user.addresses|length ==0 %}
         <p class="text-center mt-5 mb-5">Vous m'avez pas encore mit d'addresses </p>
         {% else %}
+        <div class="row">
+            {% for address in app.user.addresses %}
+                <div class="card text-center m-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ address.name }}</h5>
+                        <p class="card-text">{{ address.postal }} {{ address.city }} {{ address.country }}</p>
+                        <div class="text-center">
+                        <a href="{{ path('account_address_edit',{'id':address.id}) }}">modifier </a>|<a href="{{ path('account_address_delete',{'id':address.id}) }}"> supprimer</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     {% endif %}
     <a href="{{ path('account') }}">retour</a>
 {% endblock %}

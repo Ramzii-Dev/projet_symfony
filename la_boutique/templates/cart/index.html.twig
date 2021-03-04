@@ -31,8 +31,7 @@
             <td>
                 <a href="{{ path('decrease-from-cart',{'id':product.product.id}) }}"><i class="fas fa-minus-circle"></i></a>
                 x {{ product.quantity }}
-                <a href="{{ path('add-to
-                -cart',{'id':product.product.id}) }}"><i class="fas fa-plus-circle"></i></a>
+                <a href="{{ path('add-to-cart',{'id':product.product.id}) }}"><i class="fas fa-plus-circle"></i></a>
             </td>
             <td>{{ (product.product.price/100)|number_format(2,'.',',') }} €</td>
             <td>{{ ((product.quantity *product.product.price)/100)|number_format(2,'.',',') }} €</td>
@@ -48,7 +47,7 @@
 
       <b >total de mon panier : {{ ((total)/100)|number_format(2,'.',',') }} €</b>
     </div>
-        <a href="" class="btn btn-block btn-secondary mt-3">valider mon panier</a>
+        <a href="{{ path('order') }}" class="btn btn-block btn-secondary mt-3">valider mon panier</a>
 {% else %}
     <div class="mt-5">
         <h1 class="mt-5">Votre panier est vide ! </h1>

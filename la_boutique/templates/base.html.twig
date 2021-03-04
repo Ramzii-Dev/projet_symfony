@@ -56,13 +56,17 @@
                     <a class="nav-link" href="#">Qui somme nous ? <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
-            {% if app.user %}('
-                <a href="{{ path ('account') }}"><i class="fas fa-user ml-3 i"></i></a>
+            {% if app.user %}
+                <a href="{{ path ('account') }}"><i class="fas fa-user i"></i></a>
+                <span class="ml-1" style="color: white">{{  app.user.firstname }}</span>
+                <a href="{{ path('cart') }}"><i class="fas fa-shopping-basket ml-3 i"></i></a>
             <a href="{{ path ('app_logout')}}"><i class="far fa-sign-out-alt ml-3 i"></i></a>
+
             {% else %}
                 <a href="{{ path ('app_login')}}" class="ml-2">connexion  </a>
                 <br>
                 <a href="{{ path ('register')}}" class="ml-2">inscription</a>
+
             {% endif %}
 
         </div>
