@@ -33,7 +33,13 @@
                 x {{ product.quantity }}
                 <a href="{{ path('add-to-cart',{'id':product.product.id}) }}"><i class="fas fa-plus-circle"></i></a>
             </td>
-            <td>{{ (product.product.price/100)|number_format(2,'.',',') }} €</td>
+            <td>
+                {%  if  product.product.price > 0 %}
+                    {{ product.product.price|number_format(2,'.',',') }} €
+                {% else %}
+                    gratuit
+                {% endif %}
+            </td>
             <td>{{ ((product.quantity *product.product.price)/100)|number_format(2,'.',',') }} €</td>
             <td><a href="{{ path('delete-from-cart',{'id': product.product.id}) }}"><i class="fas fa-trash-alt"></i></a></td>
         </tr>

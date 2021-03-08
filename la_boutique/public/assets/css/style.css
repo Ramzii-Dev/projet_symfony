@@ -1,16 +1,28 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
+
 body{
     position: relative;
+
 }
 #footer
 {
-   position: absolute;
-    bottom: 0px;
+   position: fixed;
+    bottom: 0;
     padding: 0 0 0 30%;
+
 }
-#lab{
-    background-color: #00bb00;
+.form-check{
+    background-color: #c2deec;
+    padding: 16px 40px  !important;
+    margin-top: 8px;
 }
+
+.order-sammary{
+    background-color: #f4f8ff;
+    padding: 10px;
+    margin-top: 10px;
+}
+.col-form-label {
+    font-weight: bold !important;
+}
+

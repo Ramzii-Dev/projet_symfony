@@ -78,7 +78,7 @@ class OrderDetails
         return $this->quantity;
     }
 
-    public function setQuantity(Integer $quantity): self
+    public function setQuantity($quantity): self
     {
         $this->quantity = $quantity;
 
