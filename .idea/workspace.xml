@@ -2,7 +2,144 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ef6c6bb-4f9c-4be0-95d1-b922bdc446ba" name="Default Changelist" comment="24/02/2021">
-      <change beforePath="$PROJECT_DIR$/.idea/projet_symfony.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projet_symfony.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.env.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.idea/commandlinetools/Symfony_17_02_2021_10_40.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.idea/dataSources/b4a3da54-3419-4c2b-ae4a-ee9d3f2afbd2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.idea/dataSources/b4a3da54-3419-4c2b-ae4a-ee9d3f2afbd2/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.idea/dictionaries/RAMZI.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.idea/la_boutique.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/bin/console" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/bin/phpunit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/bundles.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/cache.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/dev/debug.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/dev/monolog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/dev/web_profiler.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/doctrine.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/doctrine_migrations.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/framework.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/mailer.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/notifier.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/prod/deprecations.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/prod/doctrine.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/prod/monolog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/prod/routing.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/routing.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/security.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/sensio_framework_extra.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/test/framework.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/test/monolog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/test/twig.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/test/validator.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/test/web_profiler.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/translation.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/twig.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/packages/validator.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/preload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/routes.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/routes/annotations.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/routes/dev/framework.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/routes/dev/web_profiler.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/config/services.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/docker-compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/migrations/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/migrations/Version20210218074804.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/migrations/Version20210218075430.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/migrations/Version20210218115545.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/migrations/Version20210218120142.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/migrations/Version20210224075924.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/migrations/Version20210224084749.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/migrations/Version20210224091112.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/migrations/Version20210301125903.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/migrations/Version20210301152846.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/migrations/Version20210301172038.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/migrations/Version20210303140206.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/migrations/Version20210303144738.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/migrations/Version20210305104647.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/phpunit.xml.dist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/public/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/public/assets/css/carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/public/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/public/assets/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/public/assets/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/public/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/public/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/public/images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/public/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/public/uploads/5f740762dbb704db62fc8240926dd9f9509bdee9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/public/uploads/6d791a253f8e0fc075837972ccc0fcebbaebd9d0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/public/uploads/lupain.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/public/uploads/percy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/AccountController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/AccountPasswordController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/AccoutAddressController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/Admin/CarrierCrudController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/Admin/CategoryCrudController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/Admin/DashboardController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/Admin/OrderCrudController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/Admin/ProductCrudController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/Admin/UserCrudController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/CartController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/HomeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/OrderController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/ProductController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/RegisterController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Controller/SecurityController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Entity/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Entity/Address.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Entity/Carrier.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Entity/Category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Entity/Order.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Entity/OrderDetails.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Entity/Product.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Entity/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Form/AddressType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Form/ChangePasswordType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Form/OrderType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Form/RegisterType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Form/SearchType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Repository/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Repository/AddressRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Repository/AdressRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Repository/CarrierRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Repository/CategoryRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Repository/OrderDetailsRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Repository/OrderRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Repository/ProductRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Repository/UserRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/Security/LoginFormAuthenticator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/classe/Cart.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/src/classe/Search.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/symfony.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/templates/account/address.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/templates/account/address_add.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/templates/account/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/templates/account/password.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/templates/base.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/templates/cart/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/templates/home/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/templates/order/add.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/templates/order/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/templates/product/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/templates/product/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/templates/register/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/templates/security/login.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/tests/bootstrap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/la_boutique/translations/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +282,7 @@
       <updated>1613575499821</updated>
       <workItem from="1613575503422" duration="5000" />
       <workItem from="1614176800826" duration="58000" />
+      <workItem from="1615369189567" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="24/02/2021">
       <created>1614176850161</created>
@@ -169,6 +307,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="24/02/2021" />
