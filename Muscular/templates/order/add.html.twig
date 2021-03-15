@@ -20,7 +20,7 @@
                     {{ carrier.name }}<br>
                     {{ carrier.description }}<br>
                     {%  if  carrier.price > 0 %}
-                        {{ carrier.price|number_format(2,'.',',') }} €
+                        {{ (carrier.price)/100|number_format(2,'.',',') }} €
                     {% else %}
                         gratuit
                     {% endif %}
@@ -57,11 +57,11 @@
             <hr>
             <strong> Sous-Total : </strong>{{ (total/100)|number_format(2,'.',',') }} €
             <hr>
-            <strong> Livraison : </strong>{{ (carrier.price)|number_format(2,'.',',') }} €
+            <strong> Livraison : </strong>{{ ((carrier.price /100))|number_format(2,'.',',') }} €
             <hr>
-            <strong> Total : </strong>{{ (carrier.price + (total/100))|number_format(2,'.',',') }} €
+            <strong> Total : </strong>{{ ((carrier.price /100) + (total/100))|number_format(2,'.',',') }} €
             <hr>
-            <a  class="btn btn-success btn-block mt-3" id="checkout-button"> payer  |  {{ (carrier.price + (total/100))|number_format(2,'.',',') }} €</a>
+            <a  class="btn btn-success btn-block mt-3" id="checkout-button"> payer  |  {{ ((carrier.price /100) + (total/100))|number_format(2,'.',',') }} €</a>
         </div>
     </div>
 {% endblock %}
@@ -70,14 +70,19 @@
         var stripe = Stripe("pk_test_51IT4M4BpsCG1okk4Sq5zJ01L9E1tFDLhfSjixk5lEeliHGpPsMpw9mw5EaBO1RnucE2cItMo0w0jFMEmP67liucL003x1gG6MD");
         var checkoutButton = document.getElementById("checkout-button");
         checkoutButton.addEventListener("click", function () {
-            fetch("/commande/create-session", {
+            fetch("/commande/create-session/{{ reference }}", {
                 method: "POST",
             })
                 .then(function (response) {
                     return response.json();
                 })
                 .then(function (session) {
+                    if(session.error =='order'){
+                        //redirection
+                        window.location.replace('{{ path('order') }}');
+                    }else{
                     return stripe.redirectToCheckout({ sessionId: session.id });
+                    }
                 })
                 .then(function (result) {
                     // If redirectToCheckout fails due to a browser or network

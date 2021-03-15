@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}commande reussie {% endblock %}
+
+{% block content  %}
+<h1 class="mb-4">confirmation de  votre commande </h1>
+    <div class="alert alert-success mt-5" role="alert" >
+        <h4 class="alert-heading ">Bravo!</h4>
+        <p>merci  {{ order.user.lastname}} {{ order.user.firstname}} pour votre commande n°{{ order.reference}} </p>
+        <hr>
+        <p class="mb-0">votre commande sera traité par nos équipe dans le meilleur des délais et un email de confirmation vous sera envoyer a votre asress mail
+        {{ order.user.email }}
+        </p>
+    </div>
+{% endblock %}

@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\OrderDetailsRepository;
 use Doctrine\ORM\Mapping as ORM;
+use JetBrains\PhpStorm\Pure;
 use phpDocumentor\Reflection\Types\Integer;
 
 /**
@@ -44,6 +45,10 @@ class OrderDetails
      */
     private $total;
 
+     public function __toString(): string
+    {
+     return $this->getProduct().' X '.$this->getQuantity();
+    }
     public function getId(): ?int
     {
         return $this->id;
@@ -73,7 +78,7 @@ class OrderDetails
         return $this;
     }
 
-    public function getQuantity(): ?Integer
+    public function getQuantity()
     {
         return $this->quantity;
     }

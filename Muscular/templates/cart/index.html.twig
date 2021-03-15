@@ -35,7 +35,7 @@
             </td>
             <td>
                 {%  if  product.product.price > 0 %}
-                    {{ product.product.price|number_format(2,'.',',') }} €
+                    {{ (product.product.price/100)|number_format(2,'.',',') }} €
                 {% else %}
                     gratuit
                 {% endif %}

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}commande non reussie {% endblock %}
+
+{% block content  %}
+    <h1 class="mb-4">confirmation de  votre commande </h1>
+    <div class="alert alert-danger mt-5" role="alert" >
+        <h4 class="alert-heading ">Echec!</h4>
+        <p>une erreur c'est produite veiller réessayer ou verifier votre solvabilité  </p>
+        <hr>
+        <a class="btn btn-dark" href="{{ path('order') }}">réessayer</a>
+    </div>
+{% endblock %}
