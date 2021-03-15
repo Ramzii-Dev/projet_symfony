@@ -6,7 +6,7 @@
     <a href="{{ path('account_address_add') }}" class="btn btn-outline-info btn-sm float-right">ajouter une addresse</a>
     <h1>addresses</h1>
     {% if app.user.addresses|length ==0 %}
-        <p class="text-center mt-5 mb-5">Vous m'avez pas encore mit d'addresses </p>
+        <p class="text-center mt-5 mb-5">Vous n'avez pas encore mit d'addresses </p>
         {% else %}
         <div class="row">
             {% for address in app.user.addresses %}
